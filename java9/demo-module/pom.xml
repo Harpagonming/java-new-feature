@@ -5,18 +5,19 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.zhenming.java</groupId>
-        <artifactId>new-feature</artifactId>
+        <artifactId>java9</artifactId>
         <version>${revision}</version>
     </parent>
 
     <packaging>pom</packaging>
 
-    <artifactId>java9</artifactId>
-
     <modules>
-        <module>demo-module</module>
-        <module>demo-feature</module>
+        <module>demo-module-application</module>
+        <module>demo-module-component</module>
+        <module>demo-module-core</module>
     </modules>
 
-    <description>java9内的新特性。另外，所以使用该结构，是为了用于理解模块化</description>
+    <artifactId>demo-module</artifactId>
+
+    <description>为了便于理解模块化功能</description>
 </project>
