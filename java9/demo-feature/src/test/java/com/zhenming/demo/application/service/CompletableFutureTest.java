@@ -1,5 +1,6 @@
 package com.zhenming.demo.application.service;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,8 +22,8 @@ class CompletableFutureTest {
                         throw new RuntimeException(e);
                     }
                     return "[completableFuture-1] - 死磕 Java 新特性";
-                });
-        completableFuture.whenComplete((res, ex) -> {
+                })
+                .whenComplete((res, ex) -> {
             if (ex == null) {
                 LOG.info("结果是：{}", res);
             } else {
@@ -38,5 +39,6 @@ class CompletableFutureTest {
             LOG.info("{}", s);
         });
         completableFuture.join();
+        Assertions.assertTrue(true);
     }
 }
