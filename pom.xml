@@ -24,6 +24,7 @@
 
     <modules>
         <module>java9</module>
+        <module>java10</module>
     </modules>
 
     <dependencyManagement>

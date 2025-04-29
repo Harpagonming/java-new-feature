@@ -18,5 +18,5 @@
         <module>demo-feature</module>
     </modules>
 
-    <description>java9内的新特性。另外，所以使用该结构，是为了用于理解模块化</description>
+    <description>java9的新特性。另外，所以使用该结构，是为了用于理解模块化</description>
 </project>

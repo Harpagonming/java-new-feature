@@ -24,12 +24,12 @@ class CompletableFutureTest {
                     return "[completableFuture-1] - 死磕 Java 新特性";
                 })
                 .whenComplete((res, ex) -> {
-            if (ex == null) {
-                LOG.info("结果是：{}", res);
-            } else {
-                LOG.info("发生了异常，异常信息是：{}", ex.getMessage());
-            }
-        });
+                    if (ex == null) {
+                        LOG.info("结果是：{}", res);
+                    } else {
+                        LOG.info("发生了异常，异常信息是：{}", ex.getMessage());
+                    }
+                });
         IntStream.range(0, 5).map(i -> 5 - i).mapToObj(String::valueOf).forEach(s -> {
             try {
                 TimeUnit.NANOSECONDS.sleep(200);
