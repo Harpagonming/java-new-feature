@@ -18,6 +18,7 @@ class HttpClientTest {
         try (HttpClient client = HttpClient.newHttpClient()) {
             HttpRequest request = HttpRequest.newBuilder()
                     .uri(URI.create("https://www.baidu.com"))
+                    .GET()
                     .build();
             //同步请求
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
