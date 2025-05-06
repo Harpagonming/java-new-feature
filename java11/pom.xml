@@ -9,9 +9,7 @@
         <version>${revision}</version>
     </parent>
 
-    <artifactId>java10</artifactId>
-
-    <description>java10内的新特性</description>
+    <artifactId>java11</artifactId>
 
     <dependencies>
         <dependency>
@@ -23,6 +21,12 @@
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
         </dependency>
     </dependencies>
 </project>
