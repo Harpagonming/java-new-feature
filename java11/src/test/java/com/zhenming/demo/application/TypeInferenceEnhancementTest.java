@@ -10,10 +10,10 @@ class TypeInferenceEnhancementTest {
 
     @Test
     void test() {
-        /*  可以在Lambda表达式中使用类型推断，并且可以结合注解共同使用
-         *  Function<String, String> func = (var str) -> str.trim();
+        /* 可以在Lambda表达式中使用类型推断，并且可以结合注解共同使用
+         * Function<String, String> func = (var str) -> str.trim();
          *
-         *  BiFunction<String, String, String> biFunction = (@NotNull var a, @NotNull var b) -> a + b;
+         * BiFunction<String, String, String> biFunction = (@NotNull var a, @NotNull var b) -> a + b;
          */
         Assertions.assertTrue(true);
     }
